@@ -1,0 +1,267 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#btnStyle {
+  padding-top: 30px;
+  text-align: center;
+}
+
+#btnStyle button {
+  background-color: #000;
+  border: none;
+  color: #fff;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+#card {
+  box-shadow: 0px 4px 75px rgb(0 0 0 / 25%);
+  border-radius: 50px;
+  text-align: center;
+  padding: 30px 50px;
+  width: 20%;
+  height: 80%;
+  margin: 0px auto;
+  margin-top: 20px;
+  position: relative;
+}
+
+.light-mode {
+  background: #fff;
+}
+
+.light-mode:before {
+  content: '';
+  background-color: #26235c;
+  height: 30%;
+  width: 100%;
+  position: absolute;
+  bottom: -20px;
+  right: 0px;
+  left: 0px;
+  margin: 0px auto;
+  border-radius: 50px;
+  z-index: -1;
+}
+
+.dark-mode {
+  background: #16174D;
+}
+
+.dark-mode:before {
+  content: '';
+  background-color: #f0e117;
+  height: 30%;
+  width: 100%;
+  position: absolute;
+  bottom: -20px;
+  right: 0px;
+  left: 0px;
+  margin: 0px auto;
+  border-radius: 50px;
+  z-index: -1;
+}
+
+.imagecont {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.light-mode #userAvatar {
+  border: 2px solid #26235C;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.light-mode .img-round {
+  width: 122px;
+  height: 224px;
+  background-color: transparent;
+  border-bottom-right-radius: 110px;
+  border-top-right-radius: 110px;
+  border: 3px solid #16174D;
+  border-left: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  top: -10px;
+  right: 80px;
+}
+
+.light-mode #userName {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 42px;
+  text-align: center;
+  color: #252525;
+}
+
+.light-mode #userCompany {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 28px;
+  text-align: center;
+  color: #26235C;
+}
+
+.light-mode #userBio {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #252525;
+}
+
+.light-mode #userEmail {
+  background: #26235C;
+  border-radius: 10px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 7px 15px;
+  text-decoration: none;
+}
+
+.light-mode ul {
+  padding-left: 0px;
+}
+
+.light-mode ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.light-mode ul li a {
+  font-size: 35px;
+  line-height: 40px;
+  text-align: center;
+  color: #26235C;
+}
+
+.light-mode #userName,
+.light-mode #userCompany,
+.light-mode #userBio {
+  margin: 0px;
+}
+
+.dark-mode #userAvatar {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.dark-mode .img-round {
+  width: 122px;
+  height: 224px;
+  background-color: transparent;
+  border-bottom-right-radius: 110px;
+  border-top-right-radius: 110px;
+  border: 3px solid #f0e117;
+  border-left: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  top: -10px;
+  right: 80px;
+}
+
+.dark-mode #userName {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 42px;
+  text-align: center;
+  color: #fff;
+}
+
+.dark-mode #userCompany {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 28px;
+  text-align: center;
+  color: #fff;
+}
+
+.dark-mode #userBio {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.dark-mode #userEmail {
+  background: #fff;
+  border-radius: 10px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #000;
+  padding: 7px 15px;
+  text-decoration: none;
+}
+
+.dark-mode ul {
+  padding-left: 0px;
+}
+
+.dark-mode ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.dark-mode ul li a {
+  font-size: 35px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+}
+
+.dark-mode #userName,
+.dark-mode #userCompany,
+.dark-mode #userBio {
+  margin: 0px;
+}
+
+.d-none {
+  display: none;
+}
+
+.my-5 {
+  margin: 40px 0px;
+}
+
+.search-wrap>input {
+  padding: 12px 10px;
+  border: 1px solid #18164b;
+}

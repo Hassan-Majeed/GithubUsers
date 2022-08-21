@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fetch Github Users Data</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://use.fontawesome.com/ab6cbc1d57.js"></script>
+</head>
+
+<body>
+  <div id="btnStyle">
+    <button onclick="lightMode()">Light Mode</button>
+    <button onclick="darkMode()">Dark Mode</button>
+    <div class="search-wrap my-5">
+      <input type="search" id="search_name" />
+      <button type="button" id="search_btn" onclick="search()">Search</button>
+    </div>
+  </div>
+  <div id="card" class="light-mode">
+    <div class="imagecont">
+      <img src="" id="userAvatar" alt="">
+      <div class="img-round"></div>
+    </div>
+    <h2 id="userName"></h2>
+    <h6 id="userCompany"></h6>
+    <p id="userBio"></p>
+    <h5><a href="" id="userEmail"></a></h5>
+    <ul>
+      <li><a href="" id="githubId" target=”_blank”><i class="fa fa-github" aria-hidden="true"></i></a></li>
+    </ul>
+    <div id="borderBottom"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
